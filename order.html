@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toronto Cupcakes - Order</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="logo-header">
+    <div class="brand-banner">
+        <img src="img/logo.png" alt="Toronto Cupcakes Logo" class="logo-large">
+        <h1 class="brand-name">Toronto Cupcakes</h1>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="order.html">Order</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="#">Login</a>
+</nav>
+
+<div class="main-layout">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+        <h2>Menu</h2>
+        <div class="accordion-menu">
+    
+        <div class="accordion-item">
+            <button class="accordion-toggle">Always Available</button>
+            <ul class="accordion-content scrollable">
+            <li><a href="#">Chocolate Peanut Butter Cupcake</a></li>
+            <li><a href="#">Chocolate Hazelnut Cupcake</a></li>
+            <li><a href="#">Vanilla Coconut Cupcake</a></li>
+            <li><a href="#">Chocolate Coconut Cupcake</a></li>
+            <li><a href="#">Chocolate Chocolate Cupcake</a></li>
+            <li><a href="#">Chocolate Vanilla Cupcake</a></li>
+            <li><a href="#">Red Velvet Cupcake</a></li>
+            <li><a href="#">Vanilla Vanilla Cupcake</a></li>
+            <li><a href="#">Vanilla Chocolate Cupcake</a></li>
+            <li><a href="#">Vanilla Chocolate Ganache Cupcake</a></li>
+            <li><a href="#">Chocolate Caramel Cupcake</a></li>
+            <li><a href="#">Vanilla Caramel Cupcake</a></li>
+            <li><a href="#">Chocolate Caramel II Cupcake</a></li>
+            <li><a href="#">Lemon Cupcake</a></li>
+            <li><a href="#">Chocolate Toffee Cupcake</a></li>
+            <li><a href="#">Chocolate Oreo Cupcake</a></li>
+            <li><a href="#">Humming Bird Cupcake</a></li>
+            <li><a href="#">Chocolate Vanilla Chocolate Ganache</a></li>
+            <li><a href="#">Red Velvet Fudge Cupcake</a></li>
+            <li><a href="#">Chocolate Chocolate Ganache Cupcake</a></li>
+            <li><a href="#">Hot Fudge Sundae Cupcake</a></li>
+            <li><a href="#">Chocolate Mocha Cupcake</a></li>
+            <li><a href="#">Red Velvet Raspberry Cupcake</a></li>
+            <li><a href="#">Vanilla Strawberry Cupcake</a></li>
+            </ul>
+        </div>
+    
+        <div class="accordion-item">
+            <button class="accordion-toggle">Holidays</button>
+            <ul class="accordion-content scrollable">
+            <li><a href="#">Mother's Day Dozen</a></li>
+            <li><a href="#">Mother's Day Half Dozen</a></li>
+            <li><a href="#">Christmas Dozen</a></li>
+            <li><a href="#">Valentine's Day Cupcake</a></li>
+            <li><a href="#">Pride Cupcake</a></li>
+            <li><a href="#">Easter Cupcake</a></li>
+            <li><a href="#">Oh Canada! Canada Day Cupcake</a></li>
+            <li><a href="#">St Patty's Day Cupcake</a></li>
+            </ul>
+        </div>
+    
+        <div class="accordion-item">
+            <button class="accordion-toggle">Special Events & Festivals</button>
+            <ul class="accordion-content scrollable">
+            <li><a href="#">Beaches Jazz Cupcake</a></li>
+            <li><a href="#">Toronto Intl Film Festival Cupcake</a></li>
+            <li><a href="#">Custom Cupcakes</a></li>
+            <li><a href="#">Just for Kids Cupcake</a></li>
+            <li><a href="#">Happy Birthday Cupcake</a></li>
+            <li><a href="#">Custom Image Cupcake</a></li>
+            </ul>
+        </div>
+    
+        </div>
+    </aside>
+    
+    <!-- JS to toggle accordion behavior -->
+    <script>
+        const toggles = document.querySelectorAll('.accordion-toggle');
+        toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const content = toggle.nextElementSibling;
+            content.classList.toggle('open');
+        });
+        });
+    </script>
+    
+    <!-- CSS for Accordion (add to your style.css) -->
+    <style>
+    .accordion-menu {
+        background-color: #FFFFFF;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    
+    .accordion-toggle {
+        background-color: #FDF6EE;
+        border: none;
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: #6E4E3A;
+        cursor: pointer;
+        border-radius: 8px;
+        margin-bottom: 5px;
+    }
+    
+    .accordion-content {
+        list-style: none;
+        margin: 0 0 15px 0;
+        padding: 0 15px;
+        display: none;
+    }
+    
+    .accordion-content.open {
+        display: block;
+    }
+    
+    .accordion-content li {
+        font-family: 'Lora', serif;
+        padding: 5px 0;
+        color: #6E4E3A;
+    }
+    
+    .accordion-content li a {
+        text-decoration: none;
+        color: #6E4E3A;
+    }
+    
+    .accordion-content li a:hover {
+        text-decoration: underline;
+    }
+    
+    .scrollable {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+    </style>
+    
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h2>Order Here</h2>
+        <div class="cupcake-grid">
+        
+        <div class="cupcake-card">
+            <img src="img/chocolate-peanut-butter.webp" alt="Chocolate Peanut Butter Cupcake">
+            <h4>Chocolate Peanut Butter</h4>
+            <div class="order-controls">
+            <label for="qty1">Qty:</label>
+            <input type="number" id="qty1" name="qty1" min="1" max="12" value="1">
+            <button>Add to Cart</button>
+            </div>
+        </div>
+    
+        <div class="cupcake-card">
+            <img src="img/vanilla-coconut.webp" alt="Vanilla Coconut Cupcake">
+            <h4>Vanilla Coconut</h4>
+            <div class="order-controls">
+            <label for="qty2">Qty:</label>
+            <input type="number" id="qty2" name="qty2" min="1" max="12" value="1">
+            <button>Add to Cart</button>
+            </div>
+        </div>
+    
+        <div class="cupcake-card">
+            <img src="img/red-velvet.webp" alt="Red Velvet Cupcake">
+            <h4>Red Velvet</h4>
+            <div class="order-controls">
+            <label for="qty3">Qty:</label>
+            <input type="number" id="qty3" name="qty3" min="1" max="12" value="1">
+            <button>Add to Cart</button>
+            </div>
+        </div>
+    
+        <div class="cupcake-card">
+            <img src="img/lemon.webp" alt="Lemon Cupcake">
+            <h4>Lemon</h4>
+            <div class="order-controls">
+            <label for="qty4">Qty:</label>
+            <input type="number" id="qty4" name="qty4" min="1" max="12" value="1">
+            <button>Add to Cart</button>
+            </div>
+        </div>
+    
+        <div class="cupcake-card">
+            <img src="img/chocolate-oreo.webp" alt="Chocolate Oreo Cupcake">
+            <h4>Chocolate Oreo</h4>
+            <div class="order-controls">
+            <label for="qty5">Qty:</label>
+            <input type="number" id="qty5" name="qty5" min="1" max="12" value="1">
+            <button>Add to Cart</button>
+            </div>
+        </div>
+    
+        <div class="cupcake-card">
+            <img src="img/hummingbird.webp" alt="Hummingbird Cupcake">
+            <h4>Hummingbird</h4>
+            <div class="order-controls">
+            <label for="qty6">Qty:</label>
+            <input type="number" id="qty6" name="qty6" min="1" max="12" value="1">
+            <button>Add to Cart</button>
+            </div>
+        </div>
+    
+        <div class="cupcake-card">
+            <img src="img/vanilla-vanilla.webp" alt="Vanilla Vanilla Cupcake">
+            <h4>Vanilla Vanilla</h4>
+            <div class="order-controls">
+            <label for="qty7">Qty:</label>
+            <input type="number" id="qty7" name="qty7" min="1" max="12" value="1">
+            <button>Add to Cart</button>
+            </div>
+        </div>
+    
+        <div class="cupcake-card">
+            <img src="img/chocolate-mocha.webp" alt="Chocolate Mocha Cupcake">
+            <h4>Chocolate Mocha</h4>
+            <div class="order-controls">
+            <label for="qty8">Qty:</label>
+            <input type="number" id="qty8" name="qty8" min="1" max="12" value="1">
+            <button>Add to Cart</button>
+            </div>
+        </div>
+    
+        <div class="cupcake-card">
+            <img src="img/vanilla-strawberry.webp" alt="Vanilla Strawberry Cupcake">
+            <h4>Vanilla Strawberry</h4>
+            <div class="order-controls">
+            <label for="qty9">Qty:</label>
+            <input type="number" id="qty9" name="qty9" min="1" max="12" value="1">
+            <button>Add to Cart</button>
+            </div>
+        </div>
+    
+        <div class="cupcake-card">
+            <img src="img/hot-fudge-sundae.webp" alt="Hot Fudge Sundae Cupcake">
+            <h4>Hot Fudge Sundae</h4>
+            <div class="order-controls">
+            <label for="qty10">Qty:</label>
+            <input type="number" id="qty10" name="qty10" min="1" max="12" value="1">
+            <button>Add to Cart</button>
+            </div>
+        </div>
+    
+        </div>
+    </main>
+    
+
+    <!-- Right Sidebar -->
+    <aside class="sidebar">
+        <h2>Reviews</h2>
+        <div class="reviews-container">
+        
+        <div class="review">
+            <p class="review-text">“We ordered custom logo cupcakes for a work event — they came out perfect and tasted amazing!”</p>
+            <div class="review-meta">
+            <span class="review-name">– Kevin M.</span>
+            <span class="review-stars">★★★★★</span>
+            </div>
+        </div>
+        
+        <div class="review">
+            <p class="review-text">“Delivery was fast and smooth. They even included a cute little card. Would definitely order again.”</p>
+            <div class="review-meta">
+            <span class="review-name">– Sarah T.</span>
+            <span class="review-stars">★★★★★</span>
+            </div>
+        </div>
+        
+        
+        <div class="review">
+            <p class="review-text">“They were a hit at my daughter’s birthday! Super moist, beautiful, and delicious.”</p>
+            <div class="review-meta">
+            <span class="review-name">– Alyssa P.</span>
+            <span class="review-stars">★★★★★</span>
+            </div>
+        </div>
+        <div class="review">
+            <p class="review-text">“I tried the red velvet raspberry cupcake and I swear I heard angels sing.”</p>
+            <div class="review-meta">
+            <span class="review-name">– Miguel D.</span>
+            <span class="review-stars">★★★★★</span>
+            </div>
+        </div>
+        </div>
+        
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2025 Toronto Cupcakes</p>
+</footer>
+
+</body>
+</html>

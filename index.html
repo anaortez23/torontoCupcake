@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Toronto Cupcakes - Home</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+<header class="logo-header">
+    <div class="brand-banner">
+    <img src="img/logo.png" alt="Toronto Cupcakes Logo" class="logo-large" />
+    <h1 class="brand-name">Toronto Cupcakes</h1>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="order.html">Order</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="#">Login</a>
+</nav>
+
+
+<div class="main-layout">
+
+<aside class="sidebar">
+    <h2>Menu</h2>
+    <div class="accordion-menu">
+
+    <div class="accordion-item">
+        <button class="accordion-toggle">Always Available</button>
+        <ul class="accordion-content scrollable">
+        <li><a href="#">Chocolate Peanut Butter Cupcake</a></li>
+        <li><a href="#">Chocolate Hazelnut Cupcake</a></li>
+        <li><a href="#">Vanilla Coconut Cupcake</a></li>
+        <li><a href="#">Chocolate Coconut Cupcake</a></li>
+        <li><a href="#">Chocolate Chocolate Cupcake</a></li>
+        <li><a href="#">Chocolate Vanilla Cupcake</a></li>
+        <li><a href="#">Red Velvet Cupcake</a></li>
+        <li><a href="#">Vanilla Vanilla Cupcake</a></li>
+        <li><a href="#">Vanilla Chocolate Cupcake</a></li>
+        <li><a href="#">Vanilla Chocolate Ganache Cupcake</a></li>
+        <li><a href="#">Chocolate Caramel Cupcake</a></li>
+        <li><a href="#">Vanilla Caramel Cupcake</a></li>
+        <li><a href="#">Chocolate Caramel II Cupcake</a></li>
+        <li><a href="#">Lemon Cupcake</a></li>
+        <li><a href="#">Chocolate Toffee Cupcake</a></li>
+        <li><a href="#">Chocolate Oreo Cupcake</a></li>
+        <li><a href="#">Humming Bird Cupcake</a></li>
+        <li><a href="#">Chocolate Vanilla Chocolate Ganache</a></li>
+        <li><a href="#">Red Velvet Fudge Cupcake</a></li>
+        <li><a href="#">Chocolate Chocolate Ganache Cupcake</a></li>
+        <li><a href="#">Hot Fudge Sundae Cupcake</a></li>
+        <li><a href="#">Chocolate Mocha Cupcake</a></li>
+        <li><a href="#">Red Velvet Raspberry Cupcake</a></li>
+        <li><a href="#">Vanilla Strawberry Cupcake</a></li>
+        </ul>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-toggle">Holidays</button>
+        <ul class="accordion-content scrollable">
+        <li><a href="#">Mother's Day Dozen</a></li>
+        <li><a href="#">Mother's Day Half Dozen</a></li>
+        <li><a href="#">Christmas Dozen</a></li>
+        <li><a href="#">Valentine's Day Cupcake</a></li>
+        <li><a href="#">Pride Cupcake</a></li>
+        <li><a href="#">Easter Cupcake</a></li>
+        <li><a href="#">Oh Canada! Canada Day Cupcake</a></li>
+        <li><a href="#">St Patty's Day Cupcake</a></li>
+        </ul>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-toggle">Special Events & Festivals</button>
+        <ul class="accordion-content scrollable">
+        <li><a href="#">Beaches Jazz Cupcake</a></li>
+        <li><a href="#">Toronto Intl Film Festival Cupcake</a></li>
+        <li><a href="#">Custom Cupcakes</a></li>
+        <li><a href="#">Just for Kids Cupcake</a></li>
+        <li><a href="#">Happy Birthday Cupcake</a></li>
+        <li><a href="#">Custom Image Cupcake</a></li>
+        </ul>
+    </div>
+
+    </div>
+</aside>
+
+<!-- JS to toggle accordion behavior -->
+<script>
+    const toggles = document.querySelectorAll('.accordion-toggle');
+    toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        const content = toggle.nextElementSibling;
+        content.classList.toggle('open');
+    });
+    });
+</script>
+
+<!-- CSS for Accordion (add to your style.css) -->
+<style>
+.accordion-menu {
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.accordion-toggle {
+    background-color: #FDF6EE;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #6E4E3A;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.accordion-content {
+    list-style: none;
+    margin: 0 0 15px 0;
+    padding: 0 15px;
+    display: none;
+}
+
+.accordion-content.open {
+    display: block;
+}
+
+.accordion-content li {
+    font-family: 'Lora', serif;
+    padding: 5px 0;
+    color: #6E4E3A;
+}
+
+.accordion-content li a {
+    text-decoration: none;
+    color: #6E4E3A;
+}
+
+.accordion-content li a:hover {
+    text-decoration: underline;
+}
+
+.scrollable {
+    max-height: 200px;
+    overflow-y: auto;
+}
+</style>
+
+
+<main class="main-content">
+    <h2>Welcome to Toronto Cupcakes!</h2>
+
+    <div class="intro-box">
+    <p>
+        We’re your go-to destination for the most delicious, freshly baked cupcakes in Toronto and the GTA. Whether you're celebrating a birthday, hosting a corporate event, or just treating yourself, we've got the perfect cupcakes for every occasion.
+    </p>
+    <div class="cupcake-circles">
+        <img src="img/cup-removebg.png" alt="Chocolate Cupcake">
+        <!-- <img src="img/cupcake1.webp" alt="Chocolate Cupcake">
+        <img src="img/cupcake2.webp" alt="Vanilla Cupcake">
+        <img src="img/cupcake3.webp" alt="Red Velvet Cupcake"> -->
+    </div>
+    </div>
+
+    <div class="features-box">
+    <ul>
+        <li><strong>Baked Fresh Daily:</strong> Every cupcake is made fresh to ensure maximum flavor.</li>
+        <li><strong>Perfect for Any Occasion:</strong> Birthdays, weddings, office parties — we’ve got you covered.</li>
+        <li><strong>Custom Designs Available:</strong> Need a logo or themed design? We can help.</li>
+        <li><strong>Fast & Local Delivery:</strong> Across Toronto and the GTA.</li>
+    </ul>
+    <a href="order.html" class="order-button">Order Now</a>
+    </div>
+
+</main>
+
+    <!-- Right Reviews Sidebar -->
+    <aside class="sidebar">
+        <h2>Reviews</h2>
+        <div class="reviews-container">
+        
+        <div class="review">
+            <p class="review-text">“We ordered custom logo cupcakes for a work event — they came out perfect and tasted amazing!”</p>
+            <div class="review-meta">
+            <span class="review-name">– Kevin M.</span>
+            <span class="review-stars">★★★★★</span>
+            </div>
+        </div>
+        
+        <div class="review">
+            <p class="review-text">“Delivery was fast and smooth. They even included a cute little card. Would definitely order again.”</p>
+            <div class="review-meta">
+            <span class="review-name">– Sarah T.</span>
+            <span class="review-stars">★★★★★</span>
+            </div>
+        </div>
+        
+        
+        <div class="review">
+            <p class="review-text">“They were a hit at my daughter’s birthday! Super moist, beautiful, and delicious.”</p>
+            <div class="review-meta">
+            <span class="review-name">– Alyssa P.</span>
+            <span class="review-stars">★★★★★</span>
+            </div>
+        </div>
+        <div class="review">
+            <p class="review-text">“I tried the red velvet raspberry cupcake and I swear I heard angels sing.”</p>
+            <div class="review-meta">
+            <span class="review-name">– Miguel D.</span>
+            <span class="review-stars">★★★★★</span>
+            </div>
+        </div>
+        </div>
+        
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2025 Toronto Cupcakes</p>
+</footer>
+</body>
+</html>
