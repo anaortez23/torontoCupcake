@@ -484,3 +484,100 @@ font-family: 'Lora', serif;
     margin-bottom: 15px;
     line-height: 1.6;
 }
+/* === Responsive Styles === */
+@media (max-width: 1024px) {
+    .main-layout {
+    flex-direction: column;
+    }
+
+    .sidebar {
+    order: 2;
+    margin-top: 20px;
+    }
+
+    .about-left,
+    .sidebar {
+    width: 100%;
+    padding: 0 20px;
+    }
+
+    .cupcake-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+    }
+
+    .contact-layout {
+    flex-direction: column;
+    gap: 20px;
+    }
+
+    .contact-text,
+    .contact-form {
+    width: 100%;
+    padding: 20px;
+    }
+
+    .brand-name {
+    font-size: 36px;
+    }
+
+    nav.navbar {
+    flex-wrap: wrap;
+    font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-large {
+    width: 80px;
+    }
+
+    .brand-name {
+    font-size: 28px;
+    }
+
+    .main-content h2,
+    .contact-hero h2 {
+    font-size: 24px;
+    }
+
+    .conversation h3 {
+    font-size: 18px;
+    }
+
+    nav.navbar a {
+    margin: 5px 10px;
+    font-size: 15px;
+    }
+
+    .order-controls input {
+    width: 40px;
+    }
+
+    .order-controls button {
+    padding: 6px 10px;
+    font-size: 14px;
+    }
+
+    .review-text {
+    font-size: 15px;
+    }
+
+    .cupcake-card {
+    padding: 16px;
+    }
+
+    .cupcake-card h4 {
+    min-height: auto;
+    font-size: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+    font-size: 14px;
+    }
+
+    footer {
+    font-size: 12px;
+    }
+}
